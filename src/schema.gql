@@ -1,0 +1,16 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Todos {
+  name: String!
+  task: String
+}
+
+type Query {
+  todos(done: Boolean!): [Todos!]!
+}
+
+type Mutation {
+  createTodo(title: String!, description: String!, dueDate: String!, priority: String!, projectId: String!): Todos!
+}
